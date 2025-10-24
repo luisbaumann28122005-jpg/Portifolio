@@ -3,335 +3,1116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio - Luis Fernando Baumann</title>
+    <title>Portfólio - Luis Fernando Baumann | Técnico de TI</title>
+    <meta name="description" content="Portfólio profissional de Luis Fernando Baumann - Técnico de TI especializado em automação e desenvolvimento de sistemas">
     <style>
+        /* CSS Variables for easy customization */
+        :root {
+            --primary-color: #38bdf8;
+            --primary-dark: #0ea5e9;
+            --secondary-color: #1e293b;
+            --background-color: #0f172a;
+            --surface-color: #1e293b;
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --text-muted: #64748b;
+            --border-color: #334155;
+            --shadow-color: rgba(0, 0, 0, 0.3);
+            --shadow-glow: rgba(56, 189, 248, 0.2);
+            --border-radius: 12px;
+            --transition: all 0.3s ease;
+            --header-height: 70px;
+        }
+
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
-            font-family: "Segoe UI", Arial, sans-serif;
-            background-color: #0f172a;
-            color: #e2e8f0;
-            margin: 0;
-            padding: 0;
+            font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
         }
 
-        header {
-            background-color: #1e293b;
-            padding: 2rem 1rem;
-            text-align: center;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.4);
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 2rem;
-            color: #38bdf8;
-        }
-
-        header p {
-            color: #94a3b8;
-            margin-top: 0.5rem;
-        }
-
-        section {
-            max-width: 900px;
-            margin: 2rem auto;
-            padding: 1rem;
-            background-color: #1e293b;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-        }
-
-        h2 {
-            color: #38bdf8;
-            border-bottom: 2px solid #38bdf8;
-            padding-bottom: 5px;
-            margin-bottom: 1rem;
-        }
-
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        li {
-            margin: 0.5rem 0;
-        }
-
-        a {
-            color: #38bdf8;
+        /* Skip link for accessibility */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--primary-color);
+            color: var(--background-color);
+            padding: 8px;
+            z-index: 1000;
             text-decoration: none;
+            border-radius: 0 0 4px 0;
+            transition: var(--transition);
         }
 
-        a:hover {
-            text-decoration: underline;
+        .skip-link:focus {
+            top: 0;
         }
 
-        .projeto {
-            background-color: #0f172a;
-            border: 1px solid #334155;
-            border-radius: 8px;
-            padding: 1rem;
-            margin-bottom: 1rem;
-        }
-
-        .projeto h3 {
-            color: #f8fafc;
-            margin-bottom: 0.3rem;
-        }
-
-        footer {
-            text-align: center;
-            padding: 1rem;
-            background-color: #1e293b;
-            color: #94a3b8;
-        }
-
-        .contato a {
-            display: inline-block;
-            margin: 0.3rem;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Luis Fernando Baumann</h1>
-        <p>Técnico de TI | Automação | Desenvolvimento de Sistemas</p>
-    </header>
-
-    <section>
-        <h2>Sobre mim</h2>
-        <p>Sou profissional de TI com experiência no Service Desk da Malwee, atuando em automações com scripts, gerenciamento de dispositivos (ManageEngine Endpoint, SentinelOne) e suporte técnico. Tenho grande interesse em desenvolvimento de sistemas e automação de processos com Python.</p>
-    </section>
-
-    <section>
-        <h2>Habilidades</h2>
-        <ul>
-            <li>💻 Linguagens: Python, C, SQL</li>
-            <li>⚙️ Ferramentas: ManageEngine, SentinelOne, SAP</li>
-            <li>🔧 Áreas: Automação de processos, suporte técnico, manutenção de sistemas</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>Projetos</h2>
-
-        <div class="projeto">
-            <h3>Automação de drivers e Office com Python</h3>
-            <p>Script que detecta drivers ausentes, instala automaticamente os correspondentes do SSD e gera log de instalação. Também automatiza a instalação e ativação do pacote Office.</p>
-        </div>
-
-        <div class="projeto">
-            <h3>Monitor de balanças com interface gráfica</h3>
-            <p>Aplicativo Python com interface moderna que exibe status das balanças, logs de eventos, botões de teste e gráficos com alertas animados.</p>
-        </div>
-
-        <div class="projeto">
-            <h3>Script de padronização de notebooks corporativos</h3>
-            <p>Automatiza a atualização de drivers, instalação do Office, renomeia o disco C: com o nome da máquina e gera relatórios automáticos.</p>
-        </div>
-
-        <div class="projeto">
-            <h3>Sistema de pedidos em site de vendas</h3>
-            <p>Plataforma simples feita em HTML e Python Flask para registrar pedidos e reservas de produtos, sem pagamento online.</p>
-        </div>
-    </section>
-
-    <section>
-        <h2>Experiência Profissional</h2>
-        <p><strong>Malwee – Service Desk de TI (Efetivo)</strong></p>
-        <p>Atendimento de chamados, gerenciamento de endpoints, automações com scripts Python e manutenção de agentes SentinelOne.</p>
-    </section>
-
-    <section class="contato">
-        <h2>Contato</h2>
-        <p>📧 <a href="mailto:luis.baumann28122005@gmail.com">luis.baumann28122005@gmail.com</a></p>
-        <p>📞 <a href="tel:+5547997304166">+55 47 99730-4166</a></p>
-        <p>🌐 <a href="https://github.com/">GitHub</a> | <a href="https://linkedin.com/">LinkedIn</a></p>
-    </section>
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio - Luis Fernando Baumann</title>
-    <style>
-        body {
-            font-family: "Segoe UI", Arial, sans-serif;
-            background-color: #0f172a;
-            color: #e2e8f0;
-            margin: 0;
-            padding: 0;
-        }
-
+        /* Header and Navigation */
         header {
-            background: linear-gradient(135deg, #1e293b, #0f172a);
-            padding: 3rem 1rem 2rem;
-            text-align: center;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(15, 23, 42, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            height: var(--header-height);
         }
 
-        header img {
-            width: 130px;
-            height: 130px;
-            border-radius: 50%;
-            border: 3px solid #38bdf8;
-            object-fit: cover;
-            box-shadow: 0 0 15px rgba(56, 189, 248, 0.5);
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
         }
 
-        header h1 {
-            margin-top: 1rem;
-            font-size: 2.2rem;
-            color: #38bdf8;
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            color: var(--text-primary);
+            font-weight: 600;
+            font-size: 1.2rem;
         }
 
-        header p {
-            color: #94a3b8;
-            font-size: 1.1rem;
-        }
-
-        section {
-            max-width: 900px;
-            margin: 2rem auto;
-            padding: 2rem;
-            background-color: #1e293b;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-        }
-
-        h2 {
-            color: #38bdf8;
-            border-bottom: 2px solid #38bdf8;
-            padding-bottom: 5px;
-            margin-bottom: 1.2rem;
+        .logo-icon {
+            color: var(--primary-color);
             font-size: 1.5rem;
         }
 
-        ul {
+        .nav-menu {
+            display: flex;
             list-style: none;
-            padding: 0;
+            gap: 2rem;
         }
 
-        li {
-            margin: 0.6rem 0;
-        }
-
-        a {
-            color: #38bdf8;
+        .nav-link {
+            color: var(--text-secondary);
             text-decoration: none;
+            font-weight: 500;
+            position: relative;
+            padding: 0.5rem 0;
+            transition: var(--transition);
         }
 
-        a:hover {
-            text-decoration: underline;
+        .nav-link:hover, 
+        .nav-link:focus {
+            color: var(--primary-color);
         }
 
-        .projeto {
-            background-color: #0f172a;
-            border: 1px solid #334155;
-            border-radius: 10px;
-            padding: 1rem;
-            margin-bottom: 1rem;
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        .nav-link.active {
+            color: var(--primary-color);
         }
 
-        .projeto:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 6px 20px rgba(56, 189, 248, 0.2);
+        .nav-indicator {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 2px;
+            background-color: var(--primary-color);
+            border-radius: 2px;
+            transition: width 0.3s ease, left 0.3s ease;
         }
 
-        .projeto h3 {
-            color: #f8fafc;
-            margin-bottom: 0.3rem;
+        .mobile-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--text-primary);
+            font-size: 1.5rem;
+            cursor: pointer;
         }
 
-        .contato a {
-            display: inline-block;
-            margin: 0.3rem;
-        }
-
-        footer {
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             text-align: center;
-            padding: 1rem;
-            background-color: #1e293b;
-            color: #94a3b8;
-            font-size: 0.9rem;
+            padding: calc(var(--header-height) + 2rem) 1.5rem 2rem;
+            position: relative;
+            overflow: hidden;
         }
 
-        /* Ícones simples */
-        .icon {
-            margin-right: 6px;
-            color: #38bdf8;
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(30, 41, 59, 0.8) 0%, rgba(15, 23, 42, 0.9) 100%);
+            z-index: -1;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            z-index: 1;
+        }
+
+        .hero-image {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 3px solid var(--primary-color);
+            object-fit: cover;
+            margin: 0 auto 1.5rem;
+            box-shadow: 0 0 25px var(--shadow-glow);
+            transition: var(--transition);
+        }
+
+        .hero-image:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 30px var(--shadow-glow);
+        }
+
+        .hero-title {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--primary-color);
+        }
+
+        .hero-subtitle {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+        }
+
+        .typewriter {
+            display: inline-block;
+            overflow: hidden;
+            border-right: 2px solid var(--primary-color);
+            white-space: nowrap;
+            margin: 0 auto;
+            animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+        }
+
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: var(--primary-color) }
+        }
+
+        .hero-cta {
+            margin-top: 2rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background-color: var(--primary-color);
+            color: var(--background-color);
+            text-decoration: none;
+            border-radius: var(--border-radius);
+            font-weight: 600;
+            transition: var(--transition);
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover, 
+        .btn:focus {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px var(--shadow-color);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            border: 2px solid var(--primary-color);
+            color: var(--primary-color);
+        }
+
+        .btn-outline:hover,
+        .btn-outline:focus {
+            background-color: var(--primary-color);
+            color: var(--background-color);
+        }
+
+        /* Section Styles */
+        section {
+            padding: 5rem 1.5rem;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+
+        .section-title h2 {
+            font-size: 2rem;
+            color: var(--primary-color);
+            display: inline-block;
+            margin-bottom: 0.5rem;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background-color: var(--primary-color);
+            margin: 0 auto;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* About Section */
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+
+        @media (min-width: 768px) {
+            .about-content {
+                grid-template-columns: 1fr 1fr;
+                align-items: center;
+            }
+        }
+
+        .about-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        /* Skills Section */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .skill-category {
+            background-color: var(--surface-color);
+            padding: 1.5rem;
+            border-radius: var(--border-radius);
+            box-shadow: 0 4px 6px var(--shadow-color);
+            transition: var(--transition);
+        }
+
+        .skill-category:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px var(--shadow-color);
+        }
+
+        .skill-category h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .skill-list {
+            list-style: none;
+        }
+
+        .skill-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.8rem;
+        }
+
+        .skill-icon {
+            margin-right: 0.5rem;
+            color: var(--primary-color);
+        }
+
+        /* Projects Section */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .project-card {
+            background-color: var(--surface-color);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: 0 4px 6px var(--shadow-color);
+            transition: var(--transition);
+            position: relative;
+            transform-style: preserve-3d;
+            perspective: 1000px;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px) rotateX(5deg);
+            box-shadow: 0 10px 20px var(--shadow-color);
+        }
+
+        .project-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .project-content {
+            padding: 1.5rem;
+        }
+
+        .project-title {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+            color: var(--text-primary);
+        }
+
+        .project-description {
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+        }
+
+        .project-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .project-tag {
+            background-color: var(--primary-color);
+            color: var(--background-color);
+            padding: 0.3rem 0.7rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        .project-links {
+            display: flex;
+            gap: 1rem;
+        }
+
+        /* Experience Section */
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 30px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background-color: var(--border-color);
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 2rem;
+            padding-left: 70px;
+        }
+
+        .timeline-date {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 60px;
+            height: 60px;
+            background-color: var(--primary-color);
+            color: var(--background-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            z-index: 1;
+        }
+
+        .timeline-content {
+            background-color: var(--surface-color);
+            padding: 1.5rem;
+            border-radius: var(--border-radius);
+            box-shadow: 0 4px 6px var(--shadow-color);
+        }
+
+        .timeline-content h3 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        /* Contact Section */
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 3rem;
+        }
+
+        @media (min-width: 768px) {
+            .contact-container {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background-color: var(--surface-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary-color);
+            font-size: 1.2rem;
+        }
+
+        .contact-form {
+            background-color: var(--surface-color);
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            box-shadow: 0 4px 6px var(--shadow-color);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--text-primary);
+            font-weight: 500;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 0.75rem;
+            background-color: var(--background-color);
+            border: 1px solid var(--border-color);
+            border-radius: var(--border-radius);
+            color: var(--text-primary);
+            font-family: inherit;
+            transition: var(--transition);
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 2px var(--shadow-glow);
+        }
+
+        textarea.form-control {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--secondary-color);
+            padding: 2rem 1.5rem;
+            text-align: center;
+            color: var(--text-secondary);
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .social-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: var(--surface-color);
+            border-radius: 50%;
+            color: var(--text-primary);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .social-link:hover, 
+        .social-link:focus {
+            background-color: var(--primary-color);
+            color: var(--background-color);
+            transform: translateY(-3px);
+        }
+
+        /* Back to top button */
+        .back-to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            width: 50px;
+            height: 50px;
+            background-color: var(--primary-color);
+            color: var(--background-color);
+            border: none;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition);
+            z-index: 99;
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .back-to-top:hover, 
+        .back-to-top:focus {
+            background-color: var(--primary-dark);
+            transform: translateY(-3px);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-menu {
+                position: fixed;
+                top: var(--header-height);
+                right: -100%;
+                width: 80%;
+                height: calc(100vh - var(--header-height));
+                background-color: var(--surface-color);
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+                padding-top: 2rem;
+                transition: var(--transition);
+                box-shadow: -5px 0 15px var(--shadow-color);
+            }
+
+            .nav-menu.active {
+                right: 0;
+            }
+
+            .mobile-toggle {
+                display: block;
+            }
+
+            .hero-title {
+                font-size: 2rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1.1rem;
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .timeline::before {
+                left: 20px;
+            }
+
+            .timeline-item {
+                padding-left: 50px;
+            }
+
+            .timeline-date {
+                width: 40px;
+                height: 40px;
+                font-size: 0.8rem;
+            }
+        }
+
+        /* Reduced motion support */
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
         }
     </style>
 </head>
 <body>
+    <!-- Skip link for keyboard navigation -->
+    <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+
+    <!-- Header with Navigation -->
     <header>
-        <img src="sua-foto.jpg" alt="Foto de Luis Fernando Baumann">
-        <h1>Luis Fernando Baumann</h1>
-        <p>Técnico de TI | Automação | Desenvolvimento de Sistemas</p>
+        <nav class="nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-icon">💼</span>
+                <span>Luis Baumann</span>
+            </a>
+            
+            <button class="mobile-toggle" aria-label="Abrir menu" aria-expanded="false">
+                ☰
+            </button>
+            
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Início</a></li>
+                <li><a href="#about" class="nav-link">Sobre</a></li>
+                <li><a href="#skills" class="nav-link">Habilidades</a></li>
+                <li><a href="#projects" class="nav-link">Projetos</a></li>
+                <li><a href="#experience" class="nav-link">Experiência</a></li>
+                <li><a href="#contact" class="nav-link">Contato</a></li>
+                <div class="nav-indicator"></div>
+            </ul>
+        </nav>
     </header>
 
-    <section>
-        <h2>Sobre mim</h2>
-        <p>Sou profissional de TI com experiência no Service Desk da Malwee, atuando em automações com scripts, gerenciamento de dispositivos (ManageEngine Endpoint, SentinelOne) e suporte técnico. Tenho grande interesse em desenvolvimento de sistemas e automação de processos com Python.</p>
-    </section>
-
-    <section>
-        <h2>Habilidades</h2>
-        <ul>
-            <li>💻 <strong>Linguagens:</strong> Python, C, SQL</li>
-            <li>⚙️ <strong>Ferramentas:</strong> ManageEngine, SentinelOne, SAP</li>
-            <li>🔧 <strong>Áreas:</strong> Automação de processos, suporte técnico, manutenção de sistemas</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>Projetos</h2>
-
-        <div class="projeto">
-            <h3>Automação de drivers e Office com Python</h3>
-            <p>Script que detecta drivers ausentes, instala automaticamente os correspondentes do SSD e gera log de instalação. Também automatiza a instalação e ativação do pacote Office.</p>
-        </div>
-
-        <div class="projeto">
-            <h3>Monitor de balanças com interface gráfica</h3>
-            <p>Aplicativo Python com interface moderna que exibe status das balanças, logs de eventos, botões de teste e gráficos com alertas animados.</p>
-        </div>
-
-        <div class="projeto">
-            <h3>Script de padronização de notebooks corporativos</h3>
-            <p>Automatiza a atualização de drivers, instalação do Office, renomeia o disco C: com o nome da máquina e gera relatórios automáticos.</p>
-        </div>
-
-        <div class="projeto">
-            <h3>Sistema de pedidos em site de vendas</h3>
-            <p>Plataforma simples feita em HTML e Python Flask para registrar pedidos e reservas de produtos, sem pagamento online.</p>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <img src="sua-foto.jpg" alt="Foto de perfil de Luis Fernando Baumann" class="hero-image" loading="lazy">
+            <h1 class="hero-title">Luis Fernando Baumann</h1>
+            <p class="hero-subtitle">
+                <span class="typewriter">Técnico de TI | Automação | Desenvolvimento de Sistemas</span>
+            </p>
+            <div class="hero-cta">
+                <a href="#projects" class="btn">Ver Projetos</a>
+                <a href="#contact" class="btn btn-outline">Entrar em Contato</a>
+            </div>
         </div>
     </section>
 
-    <section>
-        <h2>Experiência Profissional</h2>
-        <p><strong>Malwee – Service Desk de TI (Efetivo)</strong></p>
-        <p>Atendimento de chamados, gerenciamento de endpoints, automações com scripts Python e manutenção de agentes SentinelOne.</p>
-    </section>
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Sobre Mim</h2>
+                </div>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Sou profissional de TI com experiência no Service Desk da Malwee, atuando em automações com scripts, gerenciamento de dispositivos (ManageEngine Endpoint, SentinelOne) e suporte técnico. Tenho grande interesse em desenvolvimento de sistemas e automação de processos com Python.</p>
+                        <p>Minha paixão por tecnologia começou cedo e desde então venho aprimorando minhas habilidades em programação, automação e resolução de problemas. Estou sempre em busca de novos desafios e oportunidades para expandir meu conhecimento.</p>
+                    </div>
+                    <div class="about-image">
+                        <!-- Placeholder for additional image if needed -->
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <section class="contato">
-        <h2>Contato</h2>
-        <p>📧 <a href="mailto:luis.baumann28122005@gmail.com">luis.baumann28122005@gmail.com</a></p>
-        <p>📞 <a href="tel:+5547997304166">+55 47 99730-4166</a></p>
-        <p>🌐 
-            <a href="https://github.com/">GitHub</a> | 
-            <a href="https://www.linkedin.com/in/luis-fernando-baumann-1647992b3/">LinkedIn</a>
-        </p>
-    </section>
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Habilidades</h2>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Linguagens de Programação</h3>
+                        <ul class="skill-list">
+                            <li class="skill-item">
+                                <span class="skill-icon">🐍</span>
+                                <span>Python</span>
+                            </li>
+                            <li class="skill-item">
+                                <span class="skill-icon">🔷</span>
+                                <span>C</span>
+                            </li>
+                            <li class="skill-item">
+                                <span class="skill-icon">🗃️</span>
+                                <span>SQL</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3>Ferramentas e Tecnologias</h3>
+                        <ul class="skill-list">
+                            <li class="skill-item">
+                                <span class="skill-icon">⚙️</span>
+                                <span>ManageEngine</span>
+                            </li>
+                            <li class="skill-item">
+                                <span class="skill-icon">🛡️</span>
+                                <span>SentinelOne</span>
+                            </li>
+                            <li class="skill-item">
+                                <span class="skill-icon">💼</span>
+                                <span>SAP</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3>Áreas de Especialização</h3>
+                        <ul class="skill-list">
+                            <li class="skill-item">
+                                <span class="skill-icon">🤖</span>
+                                <span>Automação de Processos</span>
+                            </li>
+                            <li class="skill-item">
+                                <span class="skill-icon">🔧</span>
+                                <span>Suporte Técnico</span>
+                            </li>
+                            <li class="skill-item">
+                                <span class="skill-icon">🔄</span>
+                                <span>Manutenção de Sistemas</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Projetos</h2>
+                </div>
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <div class="project-content">
+                            <h3 class="project-title">Automação de drivers e Office com Python</h3>
+                            <p class="project-description">Script que detecta drivers ausentes, instala automaticamente os correspondentes do SSD e gera log de instalação. Também automatiza a instalação e ativação do pacote Office.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Python</span>
+                                <span class="project-tag">Automação</span>
+                                <span class="project-tag">Windows</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn btn-outline" aria-label="Ver detalhes do projeto Automação de drivers">Ver Detalhes</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="project-card">
+                        <div class="project-content">
+                            <h3 class="project-title">Monitor de balanças com interface gráfica</h3>
+                            <p class="project-description">Aplicativo Python com interface moderna que exibe status das balanças, logs de eventos, botões de teste e gráficos com alertas animados.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Python</span>
+                                <span class="project-tag">GUI</span>
+                                <span class="project-tag">Monitoramento</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn btn-outline" aria-label="Ver detalhes do projeto Monitor de balanças">Ver Detalhes</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="project-card">
+                        <div class="project-content">
+                            <h3 class="project-title">Script de padronização de notebooks corporativos</h3>
+                            <p class="project-description">Automatiza a atualização de drivers, instalação do Office, renomeia o disco C: com o nome da máquina e gera relatórios automáticos.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Python</span>
+                                <span class="project-tag">Automação</span>
+                                <span class="project-tag">IT</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn btn-outline" aria-label="Ver detalhes do projeto Padronização de notebooks">Ver Detalhes</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="project-card">
+                        <div class="project-content">
+                            <h3 class="project-title">Sistema de pedidos em site de vendas</h3>
+                            <p class="project-description">Plataforma simples feita em HTML e Python Flask para registrar pedidos e reservas de produtos, sem pagamento online.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Python</span>
+                                <span class="project-tag">Flask</span>
+                                <span class="project-tag">Web</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn btn-outline" aria-label="Ver detalhes do projeto Sistema de pedidos">Ver Detalhes</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Experiência Profissional</h2>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">Atual</div>
+                        <div class="timeline-content">
+                            <h3>Malwee – Service Desk de TI (Efetivo)</h3>
+                            <p>Atendimento de chamados, gerenciamento de endpoints, automações com scripts Python e PowerShell.</p>
+                            <ul>
+                                <li>Automação de processos com Python</li>
+                                <li>Gerenciamento de dispositivos com ManageEngine</li>
+                                <li>Gerenciamento de usuários no SAP</li>
+                                <li>Suporte técnico para usuários</li>
+                                <li>Manutenção em Hardware e Softawares</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Contato</h2>
+                </div>
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">📧</div>
+                            <div>
+                                <h3>Email</h3>
+                                <p><a href="mailto:luis.baumann28122005@gmail.com">luis.baumann28122005@gmail.com</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div>
+                                <h3>Telefone</h3>
+                                <p><a href="tel:+5547997304166">+55 47 99730-4166</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">🌐</div>
+                            <div>
+                                <h3>Redes Sociais</h3>
+                                <p>
+                                    <a href="https://github.com/luisfernandobaumann" target="_blank" rel="noopener">GitHub</a> | 
+                                    <a href="https://www.linkedin.com/in/luis-fernando-baumann-1647992b3/" target="_blank" rel="noopener">LinkedIn</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="name" class="form-label">Nome</label>
+                                <input type="text" id="name" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" id="email" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject" class="form-label">Assunto</label>
+                                <input type="text" id="subject" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message" class="form-label">Mensagem</label>
+                                <textarea id="message" class="form-control" required></textarea>
+                            </div>
+                            <button type="submit" class="btn">Enviar Mensagem</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
     <footer>
-        <p>© 2025 Luis Fernando Baumann — Todos os direitos reservados</p>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="https://github.com/luisfernandobaumann" class="social-link" aria-label="GitHub" target="_blank" rel="noopener">
+                    <span>🐙</span>
+                </a>
+                <a href="https://www.linkedin.com/in/luis-fernando-baumann-1647992b3/" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener">
+                    <span>💼</span>
+                </a>
+                <a href="mailto:luis.baumann28122005@gmail.com" class="social-link" aria-label="Email">
+                    <span>📧</span>
+                </a>
+            </div>
+            <p>© 2025 Luis Fernando Baumann — Todos os direitos reservados</p>
+        </div>
     </footer>
-</body>
-</html>
 
-    <footer>
-        <p>© 2025 Luis Fernando Baumann - Todos os direitos reservados</p>
-    </footer>
-</body>
-</html>
+    <!-- Back to Top Button -->
+    <button class="back-to-top" aria-label="Voltar ao topo">↑</button>
+
+    <script>
+        // Mobile menu toggle
+        const mobileToggle = document.querySelector('.mobile-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+        
+        mobileToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            const isExpanded = navMenu.classList.contains('active');
+            mobileToggle.setAttribute('aria-expanded', isExpanded);
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                mobileToggle.setAttribute('aria-expanded', 'false');
+            });
+        });
+
+        // Navigation indicator
+        const navLinks = document.querySelectorAll('.nav-link');
+        const navIndicator = document.querySelector('.nav-indicator');
+        
+        function updateIndicator(activeLink) {
+            const linkRect = activeLink.getBoundingClientRect();
+            const navRect = activeLink.parentElement.parentElement.getBoundingClientRect();
+            
+            navIndicator.style.width = `${linkRect.width}px`;
+            navIndicator.style.left = `${linkRect.left - navRect.left}px`;
+        }
+        
+        // Set initial indicator position
+        const activeLink = document.querySelector('.nav-link.active');
+        if (activeLink) {
+            updateIndicator(activeLink);
+        }
+        
+        // Update indicator on link hover
+        navLinks.forEach(link => {
+            link.addEventListener('mouseenter', () => {
+                updateIndicator(link);
+            });
+        });
+        
+        // Reset indicator when mouse leaves nav
+        document.querySelector('.nav-menu').addEventListener('mouseleave', () => {
+            const activeLink = document.querySelector('.nav-link.active');
+            if (activeLink) {
+                updateIndicator(activeLink);
+            }
+        });
+
+        // Active navigation link on scroll
+        const sections = document.querySelectorAll('section');
+        
+        function updateActiveNavLink() {
+            let current = '';
+            const scrollPosition = window.scrollY + 100;
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                
+                if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                    updateIndicator(link);
+                }
+            });
+        }
+        
+        window.addEventListener('scroll', updateActiveNavLink);
+
+        // Back to top button
+        const backToTopButton = document.querySelector('.back-to-top');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopButton.classList.add('visible');
+            } else {
+                backToTopButton.classList.remove('visible');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Form submission
+        const contactForm = document.getElementById('contactForm');
+        
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Here you would typically send the form data to a server
+            // For now, we'll just show an alert
+            alert('Obrigado pela sua mensagem! Entrarei em contato em breve.');
+            contactForm.reset();
+        });
+
+        // Project card animations on scroll
+        const projectCards = document.querySelectorAll('.project-card');
+        
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+        
+        // Set initial state for animation
+        projectCards.forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+            observer.observe(card);
+        });
+
+        // Typewriter effect reset
+        const typewriterElement = document.querySelector('.typewriter');
+        
+        function resetTypewriter() {
+            typewriterElement.style.animation = 'none';
+            void typewriterElement.offsetWidth; // Trigger reflow
+            typewriterElement.style.
